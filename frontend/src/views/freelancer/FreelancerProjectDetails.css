@@ -1,0 +1,136 @@
+/* FreelancerProjectDetails.css */
+
+.project-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+}
+
+.project-details-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+/* Encabezado del proyecto */
+.project-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.project-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.header-info {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.header-info span + span {
+  margin-left: 15px;
+}
+
+/* Secciones del detalle */
+.project-section {
+  margin-bottom: 20px;
+}
+
+.project-section h2 {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.project-section p {
+  margin: 5px 0;
+  line-height: 1.5;
+  color: #555;
+}
+
+.project-section strong {
+  font-weight: 600;
+}
+
+/* Sección de acciones */
+.project-section.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.project-section.actions button {
+  background-color: #3498db;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-section.actions button:hover {
+  background-color: #2980b9;
+}
+
+/* Botones específicos de acciones */
+.proposal-button {
+  background-color: #27ae60;
+}
+
+.proposal-button:hover {
+  background-color: #1e8449;
+}
+
+.contact-button {
+  background-color: #f39c12;
+}
+
+.contact-button:hover {
+  background-color: #d68910;
+}
+
+.save-button {
+  background-color: #8e44ad;
+}
+
+.save-button:hover {
+  background-color: #7d3c98;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .project-details-container {
+    padding: 15px 20px;
+  }
+  .project-header h1 {
+    font-size: 1.8rem;
+  }
+  .project-section h2 {
+    font-size: 1.3rem;
+  }
+}

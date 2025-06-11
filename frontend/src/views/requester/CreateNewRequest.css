@@ -1,0 +1,161 @@
+/* ---------------------- */
+/* Layout general         */
+/* ---------------------- */
+
+/* Contenedor general que engloba el contenido y el sidebar */
+.create-request-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  position: relative;
+  transition: margin-left 0.3s ease;
+}
+
+/* Sidebar fijo: se mantiene siempre visible */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px; /* ancho normal */
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  transition: width 0.3s ease;
+  z-index: 1000;
+}
+
+/* Cuando el sidebar se colapse, actualizamos su ancho */
+.create-request-page.collapsed .sidebar {
+  width: 80px;
+}
+
+/* ---------------------- */
+/* Contenedor Principal   */
+/* ---------------------- */
+
+/* Área de contenido, que se desplaza a la derecha del sidebar.
+   Se usa margin-left para respetar el ancho del sidebar y se activa el scroll solo en esta sección */
+.create-request-container {
+  flex: 1;
+  padding: 2rem;
+  margin-left: 250px;  /* ancho normal del sidebar */
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease;
+}
+
+/* Si la barra se colapsa, se reduce el margen-left */
+.create-request-page.collapsed .create-request-container {
+  margin-left: 80px;
+}
+
+/* ---------------------- */
+/* Encabezado             */
+/* ---------------------- */
+
+.create-request-header {
+  margin-bottom: 2rem;
+}
+
+.create-request-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.create-request-header p {
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* ---------------------- */
+/* Formulario             */
+/* ---------------------- */
+
+.create-request-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group small {
+  color: #888;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+/* ---------------------- */
+/* Botones y Acciones     */
+/* ---------------------- */
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* ---------------------- */
+/* Vista Previa           */
+/* ---------------------- */
+
+.preview-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.preview-section h2 {
+  margin-bottom: 1rem;
+}
+
+.preview-section p {
+  margin: 0.5rem 0;
+}

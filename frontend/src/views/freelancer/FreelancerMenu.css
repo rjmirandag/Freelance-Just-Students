@@ -1,0 +1,54 @@
+/* src/components/FreelancerMenu.css */
+
+.freelancer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu-logo img {
+  height: 40px;
+}
+
+.menu-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-nav ul li {
+  margin: 0 15px;
+}
+
+.menu-nav ul li a {
+  text-decoration: none;
+  color: #2c3e50;  /* Color oscuro elegante */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu-nav ul li a:hover {
+  color: #3498db; /* Color de acento sutil al pasar el cursor */
+}
+
+.menu-actions .logout-btn {
+  background: none;
+  border: 1px solid #2c3e50;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu-actions .logout-btn:hover {
+  background: #2c3e50;
+  color: #fff;
+}

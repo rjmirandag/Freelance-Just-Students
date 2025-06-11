@@ -1,0 +1,163 @@
+/* LandingPage.css */
+
+/* --- Paleta de Colores Minimalista --- */
+:root {
+  --primary-color: #2c3e50;   /* Color principal (oscuro, elegante) */
+  --accent-color: #3498db;    /* Acento suave para detalles */
+  --background-color: #ffffff;/* Fondo blanco */
+  --text-color: #333333;      /* Texto oscuro para buen contraste */
+}
+
+/* --- Estilos Globales --- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* --- Header --- */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+header img {
+  max-width: 150px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* --- Botones Modernos y Elegantes --- */
+.btn {
+  display: inline-block;
+  background-color: var(--background-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* --- Sección Hero (HeroSection) --- */
+.hero-container {
+  width: 100%;
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #f7f7f7; /* Fondo muy sutil para destacar la sección */
+  color: var(--primary-color);
+}
+
+.hero-container h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-container p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+/* --- Sección How It Works --- */
+section.how-it-works {
+  padding: 60px 20px;
+  background-color: var(--background-color);
+}
+
+section.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.how-it-works .steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.how-it-works .step {
+  flex: 1 1 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.how-it-works .step:hover {
+  transform: translateY(-3px);
+}
+
+/* --- Sección Testimonials --- */
+section.testimonials {
+  padding: 60px 20px;
+  background-color: var(--background-color);
+}
+
+section.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.testimonials .testimonial {
+  max-width: 700px;
+  margin: auto;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* --- Sección Call to Action --- */
+section.call-to-action {
+  padding: 60px 20px;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+section.call-to-action h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+section.call-to-action p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+section.call-to-action .cta-buttons a {
+  margin: 0 15px;
+}

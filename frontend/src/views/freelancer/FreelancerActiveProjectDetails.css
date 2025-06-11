@@ -1,0 +1,226 @@
+/* FreelancerActiveProjectDetails.css */
+
+.active-project-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f7fc;
+  font-family: 'Arial', sans-serif;
+}
+
+.active-project-details-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+/* Encabezado del proyecto */
+.project-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.project-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.header-info {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.header-info span {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Secciones generales */
+.project-section {
+  margin-bottom: 25px;
+}
+
+.project-section h2 {
+  color: #3498db;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.project-section h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.project-section p {
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Milestones y barra de progreso */
+.milestones-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.overall-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+/* Sección de gestión */
+.management h3 {
+  margin-top: 0;
+}
+
+.files-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.files-section li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.upload-button {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #1e8449;
+}
+
+.communication-section .contact-button {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.communication-section .contact-button:hover {
+  background-color: #d68910;
+}
+
+/* Acciones clave */
+.actions button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.actions button:hover {
+  background-color: #2980b9;
+}
+
+.actions .update-progress input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.cancel-button {
+  background-color: #e74c3c !important;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b !important;
+}
+
+/* Sección de notificaciones */
+.notifications p {
+  background-color: #ffeaa7;
+  padding: 10px;
+  border-radius: 4px;
+  color: #2c3e50;
+}
+
+/* Navegación final */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .active-project-details-container {
+    padding: 20px;
+  }
+  .project-header h1 {
+    font-size: 1.8rem;
+  }
+  .project-section h2 {
+    font-size: 1.3rem;
+  }
+}
